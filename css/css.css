@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 2em;
+ 	background-color: #014389;
+	color: #FEF2BF;
+}
+
+h1 {
+    margin: 0 0 2% 0;
+    font-weight: bold;
+}
+
+
+ol {
+	text-align: left;
+	font-size: 1.2rem;
+	font-family: monospace;
+ }
+
+#container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap:wrap; 
+}
+
+#game {
+	width: 80%;
+}
+
+#external-circle {
+	width: 550px;
+	height: 550px;
+	margin: auto;
+	border-radius: 50%;
+	background-color: #000000;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+#enter {
+	margin: 2% auto;
+	padding: 2%;
+	cursor: grab;
+}
+
+#rules {
+	width: 20%;
+	cursor: grab;
+}
+
+.game-over {
+	background-color: #8f0000;
+}
+
+.center-div {
+	width:98%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 1%;
+}
+
+.btn{
+	width: 255px;
+	height: 255px;
+	margin: 10px;
+}
+
+#leftdot {
+	background-color: #00FF00; 
+	border-radius: 100% 0% 25% 0%;
+}
+#rightdot {
+	background-color: #FF0000;
+	border-radius: 0% 100% 0% 25%;
+}
+#bottomleftdot {
+	background-color: #FFFF00;
+	border-radius: 0% 25% 0% 100%;
+}
+
+#bottomrightdot {
+	background-color: #0000FF;
+	border-radius: 25% 0% 100% 0%;
+}
+
+@media (max-width: 400px) {
+
+	body {
+		font-size: 0.7em;
+	}
+
+	#container {
+		flex-direction: column-reverse;  
+	}
+
+	#game, #rules{
+		width: 100%;
+	}
+
+	#external-circle {
+		width: 275px;
+		height: 275px;
+	}
+
+	.btn {
+		width: 117px;
+		height: 117px;
+		margin: 10px;
+	}
+	
+}
+
+

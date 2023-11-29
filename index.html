@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<title>Simon Game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/css.css">
+
+	</head>
+	<body>
+		<div id="main" class="center-div">
+			<div id="container"  class="center-div">
+				<div id="game">
+					<h1>Press Enter to start game</h1>
+					<div id="external-circle">
+						<button id="leftdot" class="btn"></button>
+						<button id="rightdot" class="btn"></button>
+						<button id="bottomleftdot" class="btn"></button>
+						<button id="bottomrightdot" class="btn"></button>
+					</div>
+					<div id="enter">Enter</div>
+				</div>
+
+				<div id="rules">
+					Rules of game					
+					<div id="explain">
+						<ol>										
+							<li>Simon will give the first signal.</li>						
+							<li>Repeat the signal by pressing the same color lens.</li>						
+							<li>Simon will add one signal.</li>
+							<li>Repeat signals by pressing the same color lenses, in order.</li>					
+							<li>Continue playing as long as you can repeat each sequence of signals correctly.</li>						
+							<li>If you fail to repeat a sequence exactly Simon responds with a "RAZZ" sound. This means you've lost, and the sequence of signals ends.</li>						
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="./js/js.js"></script>
+
+	</body>
+</html>
