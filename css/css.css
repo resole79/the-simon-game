@@ -20,6 +20,10 @@ ol {
 	font-family: monospace;
  }
 
+li {
+	margin-top: 10%;
+}
+
 #container {
   display: flex;
   flex-direction: row; 
@@ -86,7 +90,7 @@ ol {
 	border-radius: 25% 0% 100% 0%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
 
 	body {
 		font-size: 0.7em;
